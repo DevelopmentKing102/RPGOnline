@@ -1,0 +1,27 @@
+{
+  "name": "rpgonline",
+  "version": "1.0.0",
+  "description": "A RPG in Javascript that uses Websockets and NodeJs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevelopmentKing102/RPGOnline.git"
+  },
+  "author": "Logan Smith - Perkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevelopmentKing102/RPGOnline/issues"
+  },
+  "homepage": "https://github.com/DevelopmentKing102/RPGOnline#readme",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "http": "0.0.0",
+    "net": "^1.0.2",
+    "utf-8-validate": "^5.0.2",
+    "websocket": "^1.0.31",
+    "ws": "^7.2.1"
+  }
+}
