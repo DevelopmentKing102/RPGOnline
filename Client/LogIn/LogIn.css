@@ -1,0 +1,69 @@
+#header{
+	width: 100%;
+	padding:0px;
+	border-bottom: 3px solid black;
+}
+.headerButtonText{
+	font-family: "Lacquer", sans-serif;
+	font-size: 20px;
+	width:25%;
+	text-align: center;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+#headingText{
+	font-family: "Indie Flower", sans-serif;
+	font-size: 23px;
+	width:20%;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+#usernameText{
+	display: inline-block;
+	font-family: "Odibee Sans", sans-serif;
+	font-size:25px;
+}
+#passwordText{
+	display: inline-block;
+	font-family: "Odibee Sans", sans-serif;
+	font-size:25px;
+}
+#loginButton{
+	text-align: center;
+	display: inline-block;
+	border: 0.5px solid black;
+	height:50px;
+	margin-left:1%;
+	border-radius: 25%;
+	margin-right: 5%;
+	cursor: pointer;
+}
+#signupButton{
+	display: inline-block;
+	border: 1px solid black;
+	height:50px;
+	border-radius: 30%;
+	cursor: pointer;
+}
+#LogInDetails{
+	text-align: center;
+}
+#usernameInput{
+	height:25px;
+}
+#passwordInput{
+	height: 25px;
+}
+#Introduction{
+	font-family: "Tomorrow", sans-serif;
+	font-size: 28px;
+}
+#output{
+	color:red;
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+}

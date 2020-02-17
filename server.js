@@ -6,11 +6,13 @@ Author: Logan Smith - Perkins
 const http = require('http');
 // Importing the websocket library which is used to interface between webpage and nodejs
 const WebSocketServer = require('websocket').server;
+const fs = require("fs");
 // This server is created using the http createServer function, which enables the user to create a http connection with a webpage
 const server = http.createServer();
 // The server then listens on the port specified
-server.listen(7000);
+server.listen(13456);
 
+var databaseData = fs.readFileSync("users.database");
 // We then create a new variable which will store the actual server I'll be running
 const wsServer = new WebSocketServer({
 	// Then we set the parameter of httpServer to the server variable that we said that would be listening on the port specified
@@ -25,8 +27,19 @@ wsServer.on('request', function(request){
 	connection.on('message', function(message){
 		// We print out to the console the recieved message decoded to utf8
 		console.log("Recieved Message: " + message.utf8Data);
-		// Then we send specifically to this connection back a message
-		connection.sendUTF("Hello this is the websocket server.");
+		var splitMessage = message.utf8Data.split(":");
+		if(splitMessage[0] == "LOGIN"){
+			databaseData = fs.readFileSync("users.database");
+			databaseData += "";
+			var account = databaseData.split(";");
+			var checked = false;
+			for(var i = 0; i < account.length; i++){
+				var accounts = account[i].split(",");
+				if(splitMessage[2] == accounts[0] && splitMessage[4] == accounts[1]){
+					connection.sendUTF("LOGIN:ACCEPTED");
+				}
+			}
+		}
 	});
 	// This code is run when the user disconnects from the server.
 	connection.on('close', function(reasonCode, description){

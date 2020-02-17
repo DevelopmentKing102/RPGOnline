@@ -1,0 +1,56 @@
+#titleText {
+	text-align: center;
+	font-size: 40px;
+	margin-top:100px;
+	font-family: "Indie Flower", sans-serif;
+}
+
+#playButton{
+	text-align: center;
+	width:15%;
+	margin-left:44%;
+	font-family: "Lacquer", sans-serif;
+	font-size: 40px;
+	cursor: pointer;
+}
+#header{
+	width: 100%;
+	padding:0px;
+	border-bottom: 3px solid black;
+}
+.headerButtonText{
+	font-family: "Lacquer", sans-serif;
+	font-size: 20px;
+	width:25%;
+	text-align: center;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+#headingText{
+	font-family: "Indie Flower", sans-serif;
+	font-size: 23px;
+	width:20%;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+#description{
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+.heading{
+	font-family: Tomorrow, sans-serif;
+	font-size: 28px;
+	margin-left:12%;
+}
+#headingDescription{
+	text-align: left;
+	margin-left:12%;
+	font-size: 18px;
+	font-family: Roboto, sans-serif;
+	width:76%;
+}
